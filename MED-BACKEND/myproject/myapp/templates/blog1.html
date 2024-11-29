@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medico Plus - Home</title>
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <!-- Preload Images -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+</head>
+<body id="top" style="background-color: rgb(203, 236, 230);">
+
+  <!-- Preloader -->
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" data-header style="background-color: hsl(188, 22%, 14%);">
+    <div class="container">
+      <a href="./index.html" class="logo">
+        <img src="./assets/images/Medicoplus_logo.png" width="136" height="46" alt="Medico Plus Home">
+      </a>
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/Medicoplus_logo.png" width="136" height="46" alt="Medico Plus Home">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="index.html" class="navbar-link title-md">Home</a></li>
+          <li class="navbar-item"><a href="doctors.html" class="navbar-link title-md">Doctors</a></li>
+          <li class="navbar-item"><a href="#section_article" class="navbar-link title-md">Articles</a></li>
+          <li class="navbar-item"><a href="#section_page" class="navbar-link title-md">Services</a></li>
+          <li class="navbar-item"><a href="./login.html" class="navbar-link title-md">Sign-in</a></li>
+        </ul>
+        <ul class="social-list">
+          <li><a href="https://twitter.com" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="https://www.facebook.com" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://in.pinterest.com" class="social-link"><ion-icon name="logo-pinterest"></ion-icon></a></li>
+          <li><a href="https://instagram.com" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+      </nav>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <!-- Article Section -->
+  <section style="padding: 5%;">
+    <div style="padding: 10%;">
+      <h2>Eating a dozen eggs per week may not affect your cholesterol, study suggests</h2>
+    </div>
+    <p>Are eggs good for you? That’s a question that experts have been trying to figure out for a long time, with many studies devoted to this area of research. One area of interest is how eating eggs may affect people at a higher risk for cardiovascular disease problems.</p>
+    <p>Recent study results presented at the American College of Cardiology’s Annual Scientific Session suggest that eating a dozen fortified eggs a week does not have a significant impact on cholesterol compared to eating two or fewer eggs a week...</p>
+
+    <h4>What impact on cholesterol do eggs have?</h4>
+    <p>Eggs have been a common component of the human diet for many years. They contain many helpful nutrients, such as protein, vitamin B12, iodine, and vitamin D. There are many options for egg types...</p>
+
+    <h4>How eggs affect cholesterol and cardiovascular health</h4>
+    <p>This study examined the consumption of fortified eggs among people at a certain level of risk for poor cardiovascular outcomes...</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png');">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand" data-reveal="bottom">
+          <a href="#" class="logo">
+            <img src="./assets/images/Medicoplus_logo.png" width="136" height="46" alt="Doclab Home">
+          </a>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <div class="item-icon"><ion-icon name="mail-open-outline"></ion-icon></div>
+              <div>
+                <p>Main Email: <a href="mailto:contact@medicoplus.com" class="contact-link">contact@medicoplus.com</a></p>
+                <p>Inquiries: <a href="mailto:info@medicoplus.com" class="contact-link">info@medicoplus.com</a></p>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="item-icon"><ion-icon name="call-outline"></ion-icon></div>
+              <div>
+                <p>Office Telephone: <a href="tel:0029129102320" class="contact-link">0029129102320</a></p>
+                <p>Mobile: <a href="tel:000232439493" class="contact-link">000 2324 39493</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list" data-reveal="bottom">
+          <p class="headline-sm footer-list-title">About Us</p>
+          <p class="text">A solution for Accessible Healthcare in Unknown Places !!!</p>
+          <address class="address">
+            <ion-icon name="map-outline"></ion-icon>
+            <span class="text">2416 Mapleview Drive<br>Tampa, FL 33634</span>
+          </address>
+        </div>
+
+        <ul class="footer-list" data-reveal="bottom">
+          <li><p class="headline-sm footer-list-title">Services</p></li>
+          <li><a href="./healthcard.html" class="text footer-link">Healthcard</a></li>
+          <li><a href="./medicine.html" class="text footer-link">Medicine</a></li>
+          <li><a href="./laboratory.html" class="text footer-link">Laboratory</a></li>
+          <li><a href="./onlineconsultation.html" class="text footer-link">Online Consultation</a></li>
+        </ul>
+
+        <ul class="footer-list" data-reveal="bottom">
+          <li><p class="headline-sm footer-list-title">Useful Links</p></li>
+          <li><a href="pp.html" class="text footer-link">Privacy Policy</a></li>
+          <li><a href="joinasdoctor.html" class="text footer-link">Join as a Doctor</a></li>
+          <li><a href="termsandconditions.html" class="text footer-link">Terms & Conditions</a></li>
+        </ul>
+
+        <div class="footer-list" data-reveal="bottom">
+          <p class="headline-sm footer-list-title">Subscribe</p>
+          <form action="" class="footer-form">
+            <input type="email" name="email" placeholder="Email" class="input-field title-lg">
+            <button type="submit" class="btn has-before title-md">Subscribe</button>
+          </form>
+          <p class="text">Get the latest updates via email. You can unsubscribe anytime.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="text copyright">&copy; Medico Plus 2024 | All Rights Reserved by Medico Plus</p>
+        <ul class="social-list">
+          <li><a href="https://www.facebook.com" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://twitter.com" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="https://www.google.com

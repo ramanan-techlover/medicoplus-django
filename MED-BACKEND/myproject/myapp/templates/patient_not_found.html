@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <style>
+        body {
+             background-color: #005761;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color:#005761;
+            overflow: hidden;
+            padding: 15px 10px;
+        }
+
+        .navbar a {
+            float: right;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #0073a8;
+            color: white;
+        }
+
+        .navbar .logo {
+            float: left;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            padding-right: 15px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #005f99;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .button {
+            position: relative;
+            left: 41%;
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+
+}
+.button:hover{
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo" style="font-size: 50px;">MedicoPlus</div>
+        <a href="https://ramanan-techlover.github.io/medico-plus/login.html">Account</a>
+        <a href="https://ramanan-techlover.github.io/medico-plus/index.html#section_page">Services</a>
+        <a href="https://ramanan-techlover.github.io/medico-plus/index.html#section_article">Articles</a>
+        <a href="https://ramanan-techlover.github.io/medico-plus/doctors.html">Contacts</a>         
+        <a href="https://ramanan-techlover.github.io/medico-plus/index.html">Home</a>
+       
+        
+
+    </div>
+
+    <!-- Container for Patient Details -->
+    <div class="container">
+        <h1>Patient Details</h1>
+        <br>
+        <h2>Patients Not Found</h2>
+        <p>The Scanned NFC card does not match any patient record</p>
+        <form action="#Add New Prescription">
+            <button type="submit" class="button">Add Prescription</button>
+        </form>
+    </div>
+</body>
+</html>

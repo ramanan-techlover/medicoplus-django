@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #005761;
+            overflow: hidden;
+            padding: 15px 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            float: right;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #0073a8;
+            color: white;
+        }
+
+        .navbar .logo {
+            float: left;
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+            padding-right: 15px;
+            animation: fadeInLogo 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInLogo {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 { text-align: center; color: #005f99; }
+
+        p { text-align: justify; font-size: 18px; line-height: 1.6; }
+
+        footer {
+            background-color: #005761;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        .button {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #02874b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+     <header>
+    <div class="navbar">
+        <div class="logo" style="font-size: 50px;">MedicoPlus</div>
+        <a href="https://ramanan-techlover.github.io/medico-plus/login.html">Account</a>
+        <a href="https://ramanan-techlover.github.io/medico-plus/index.html#section_page">Services</a>
+        <a href="https://ramanan-techlover.github.io/medico-plus/index.html#section_article">Articles</a>
+        <a href="https://ramanan-techlover.github.io/medico-plus/doctors.html">Contacts</a>         
+        <a href="https://ramanan-techlover.github.io/medico-plus/index.html">Home</a>
+    </header>
+
+    <!-- Container for Patient Details -->
+    <div class="container">
+        <h1>Patient Details</h1>
+        <p><strong>Name:</strong> {{ patient.name|default:"N/A" }}</p>
+        <p><strong>Age:</strong> {{ patient.age|default:"N/A" }}</p>
+        <p><strong>Gender:</strong> {{ patient.gender|default:"N/A" }}</p>
+        <p><strong>Blood Type:</strong> {{ patient.blood_type|default:"N/A" }}</p>
+        <p><strong>Medical Condition:</strong> {{ patient.medical_condition|default:"N/A" }}</p>
+        <p><strong>Admission Date:</strong> {{ patient.admission_date|default:"N/A" }}</p>
+        <p><strong>Discharge Date:</strong> {{ patient.discharge_date|default:"N/A" }}</p>
+        <p><strong>Prescribed Drugs:</strong> {{ patient.prescribed_drugs|default:"N/A" }}</p>
+        <p><strong>Test Results:</strong> {{ patient.test_results|default:"N/A" }}</p>
+
+        <form action="#" method="POST">  <!-- Update the form action here -->
+            {% csrf_token %}
+            <button type="submit" class="button">Add Prescription</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2024 MedicoPlus. All Rights Reserved.
+    </footer>
+</body>
+</html>
